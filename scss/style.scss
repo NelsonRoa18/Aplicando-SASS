@@ -36,23 +36,16 @@
 
 // 7. Optionally include utilities API last to generate classes based on the Sass map in `_utilities.scss`
 @import "../node_modules/bootstrap/scss/utilities/api";
-
-
+ 
+@import "../scss/mixins.scss";
 
 
 /* Mixin de display:flex, flex direction:row y justify-content:flex-end */
-@mixin flex-row-end {
-	display: flex;
-	flex-direction: row;
-	justify-content: flex-end;
-}
 
-@mixin flex-row-start {
-	display: flex;
-	flex-direction: row;
-	justify-content: start;
-}
 
+$color-header-nav-footer: rgb(4, 4, 163);
+$color-card-header: #100887;
+$width-logo:100px;
 
 body{
 	background-color: black;
@@ -64,7 +57,7 @@ body{
 header,
 footer,
 nav {
-	background-color: rgb(4, 4, 163);
+	background-color: $color-header-nav-footer;
 	font-family: 'EB Garamond', serif;
 	font-family: 'Playfair Display', serif;
 	font-size: large;
@@ -115,7 +108,7 @@ nav.nav {
 	div.card {
 		padding: 0%;
 		div.card-header{
-			background-color: #100887;
+			background-color: $color-card-header;
 		}
 	}
 
@@ -126,7 +119,7 @@ nav.nav {
 	div.card {
 		padding: 0%;
 		div.card-header{
-			background-color: #100887;
+			background-color: $color-card-header;
 		}
 	}
 
@@ -142,15 +135,15 @@ p {
 
 .redes__nav {
 	@include flex-row-end;
+	p{
+		margin-right: 7px;
+	}
+	a{
+		margin-left: 10px;
+	}
 }
 
-.redes__nav p {
-	margin-right: 7px;
-}
 
-.redes__nav a {
-	margin-left: 10px;
-}
 
 /* Animaciones de galeria fotos y texto*/
 
@@ -218,7 +211,7 @@ p {
 @include media-breakpoint-only (xs) {
 
 	.img__logo__header {
-		width: 100px;
+		width: $width-logo;
 	}
 
 	h6 {
@@ -328,7 +321,7 @@ p {
 @include media-breakpoint-only(sm) {
 
 	.img__logo__header {
-		width: 100px;
+		width: $width-logo;
 	}
 
 	h6 {

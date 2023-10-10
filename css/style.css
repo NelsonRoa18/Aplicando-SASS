@@ -7022,11 +7022,9 @@ p {
   flex-direction: row;
   justify-content: flex-end;
 }
-
 .redes__nav p {
   margin-right: 7px;
 }
-
 .redes__nav a {
   margin-left: 10px;
 }
