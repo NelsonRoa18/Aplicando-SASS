@@ -1,8 +1,12 @@
+/* Mixin de display:flex, flex direction:row y justify-content:flex-end */
+
 @mixin flex-row-end {
 	display: flex;
 	flex-direction: row;
 	justify-content: flex-end;
 }
+
+/* Mixin de display:flex, flex direction:row y justify-content: start*/
 
 @mixin flex-row-start {
 	display: flex;

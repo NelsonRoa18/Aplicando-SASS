@@ -6954,6 +6954,10 @@ progress {
   }
 }
 /* Mixin de display:flex, flex direction:row y justify-content:flex-end */
+/* Mixin de display:flex, flex direction:row y justify-content: start*/
+/* Variable del color de fondo del header, nav y footter*/
+/* Color del header de las cards*/
+/* Width de la imagen del logo*/
 body {
   background-color: black;
   color: white;
