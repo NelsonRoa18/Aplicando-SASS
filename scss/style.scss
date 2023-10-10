@@ -58,10 +58,15 @@ nav {
 	font-size: large;
 }
 
+/* Header de los html*/
+
 div.row {
 
 	div.text-md-center {
-		color: beige
+		color: beige;
+		a {
+			@include text-decoration-color-for-links;
+		}
 	}
 }
 
@@ -75,8 +80,7 @@ nav.nav {
 	ul.nav {
 		li.nav-link {
 			a {
-				text-decoration: none;
-				color: beige;
+				@include text-decoration-color-for-links;
 			}
 		}
 
@@ -97,6 +101,20 @@ nav.nav {
 		}
 	}
 }
+
+/* Iconos en el navbar*/
+
+.redes__nav {
+	@include flex-row-end;
+	p{
+		margin-right: 7px;
+	}
+	a{
+		margin-left: 10px;
+	}
+}
+
+/* Cards del index*/
 
 .cards__index {
 
@@ -126,80 +144,8 @@ p {
 	margin: 0;
 }
 
-/* Iconos en el navbar*/
-
-.redes__nav {
-	@include flex-row-end;
-	p{
-		margin-right: 7px;
-	}
-	a{
-		margin-left: 10px;
-	}
-}
 
 
-
-/* Animaciones de galeria fotos y texto*/
-
-.anim__imagengaleria {
-
-	position: relative;
-	overflow: hidden;
-	padding: 1.5rem;
-}
-
-.anim__imagengaleria:hover {
-
-	img {
-		transform: scale(1.09);
-		-webkit-box-shadow: 0px 0px 5px 3px rgba(173, 170, 173, 1);
-		box-shadow: 0px 0px 5px 3px rgb(104, 102, 104);
-	}
-
-}
-
-.anim__imagengaleria {
-
-	img {
-		width: 90%;
-		height: 361px;
-		transition: all .5s;
-	}
-
-}
-
-.anim__textgaleria {
-
-	position: relative;
-	overflow: inherit;
-	padding: 1rem;
-
-}
-
-.anim__textgaleria:hover {
-	h3 {
-		transform: scale(1.15);
-	}
-
-	p {
-		transform: scale(1.15);
-	}
-}
-
-.anim__textgaleria {
-
-	h3,
-	p {
-		width: 90%;
-		transition: all .5s;
-
-	}
-
-	h3 {
-		padding-bottom: 2rem;
-	}
-}
 
 /* vista mobile */
 
@@ -240,19 +186,6 @@ p {
 	}
 
 
-	/* html galeria */
-
-	.titulos__tragos {
-		text-align: center;
-	}
-
-	.titulos__descripcion h3 {
-		font-size: small;
-	}
-
-	.descripcion__tragos p {
-		font-size: x-small;
-	}
 
 
 	/* html nosotros */
@@ -271,43 +204,6 @@ p {
 		}
 	}
 
-	.anim__imagengaleria {
-		padding: 1rem;
-
-		img {
-			height: 200px;
-		}
-
-	}
-
-	.anim__textgaleria:hover {
-		h3 {
-			transform: scale(1.09);
-		}
-
-		p {
-			transform: scale(1.07);
-		}
-	}
-
-	.anim__textgaleria {
-
-		h3,
-		p {
-			width: 100%;
-			transition: all .5s;
-
-		}
-
-		h3 {
-			padding-bottom: 0.5rem;
-		}
-
-		p {
-			padding-bottom: 0.5rem;
-		}
-
-	}
 
 }
 
@@ -350,20 +246,6 @@ p {
 	}
 
 
-	/* html galeria */
-	.titulos__tragos {
-
-		text-align: center;
-	}
-
-	.titulos__descripcion h3 {
-		font-size: small;
-	}
-
-	.descripcion__tragos p {
-		font-size: x-small;
-	}
-
 
 	/* html nosotros */
 
@@ -381,40 +263,6 @@ p {
 		}
 	}
 
-	/* Animaciones en fotos y texto de galeria*/
-
-	.anim__imagengaleria {
-
-		padding: 1rem;
-
-		img {
-			height: 200px;
-		}
-	}
-
-	.anim__textgaleria:hover {
-		h3 {
-			transform: scale(1.09);
-		}
-
-		p {
-			transform: scale(1.07);
-		}
-	}
-
-	.anim__textgaleria {
-
-		h3,
-		p {
-			width: 100%;
-			transition: all .5s;
-		}
-
-		h3 {
-			padding-bottom: 0.5rem;
-		}
-
-	}
 
 
 }

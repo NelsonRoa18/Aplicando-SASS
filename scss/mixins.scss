@@ -13,3 +13,10 @@
 	flex-direction: row;
 	justify-content: start;
 }
+
+/* Mixin para links sin decoracion y color beige*/
+
+@mixin text-decoration-color-for-links {
+	text-decoration: none;
+	color: beige;
+}

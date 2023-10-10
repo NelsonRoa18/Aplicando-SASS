@@ -6955,6 +6955,7 @@ progress {
 }
 /* Mixin de display:flex, flex direction:row y justify-content:flex-end */
 /* Mixin de display:flex, flex direction:row y justify-content: start*/
+/* Mixin para links sin decoracion y color beige*/
 /* Variable del color de fondo del header, nav y footter*/
 /* Color del header de las cards*/
 /* Width de la imagen del logo*/
@@ -6974,7 +6975,12 @@ nav {
   font-size: large;
 }
 
+/* Header de los html*/
 div.row div.text-md-center {
+  color: beige;
+}
+div.row div.text-md-center a {
+  text-decoration: none;
   color: beige;
 }
 
@@ -7000,6 +7006,20 @@ nav.nav ul.nav li.align-items-center a {
   color: beige;
 }
 
+/* Iconos en el navbar*/
+.redes__nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+.redes__nav p {
+  margin-right: 7px;
+}
+.redes__nav a {
+  margin-left: 10px;
+}
+
+/* Cards del index*/
 .cards__index div.card {
   padding: 0%;
 }
@@ -7018,60 +7038,6 @@ h6, .h6,
 p {
   padding: 0;
   margin: 0;
-}
-
-/* Iconos en el navbar*/
-.redes__nav {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-}
-.redes__nav p {
-  margin-right: 7px;
-}
-.redes__nav a {
-  margin-left: 10px;
-}
-
-/* Animaciones de galeria fotos y texto*/
-.anim__imagengaleria {
-  position: relative;
-  overflow: hidden;
-  padding: 1.5rem;
-}
-
-.anim__imagengaleria:hover img {
-  transform: scale(1.09);
-  -webkit-box-shadow: 0px 0px 5px 3px rgb(173, 170, 173);
-  box-shadow: 0px 0px 5px 3px rgb(104, 102, 104);
-}
-
-.anim__imagengaleria img {
-  width: 90%;
-  height: 361px;
-  transition: all 0.5s;
-}
-
-.anim__textgaleria {
-  position: relative;
-  overflow: inherit;
-  padding: 1rem;
-}
-
-.anim__textgaleria:hover h3, .anim__textgaleria:hover .h3 {
-  transform: scale(1.15);
-}
-.anim__textgaleria:hover p {
-  transform: scale(1.15);
-}
-
-.anim__textgaleria h3, .anim__textgaleria .h3,
-.anim__textgaleria p {
-  width: 90%;
-  transition: all 0.5s;
-}
-.anim__textgaleria h3, .anim__textgaleria .h3 {
-  padding-bottom: 2rem;
 }
 
 /* vista mobile */
@@ -7100,16 +7066,6 @@ p {
     flex-direction: row;
     justify-content: start;
   }
-  /* html galeria */
-  .titulos__tragos {
-    text-align: center;
-  }
-  .titulos__descripcion h3, .titulos__descripcion .h3 {
-    font-size: small;
-  }
-  .descripcion__tragos p {
-    font-size: x-small;
-  }
   /* html nosotros */
   section.sobre_nosotros h2, section.sobre_nosotros .h2 {
     font-size: x-large;
@@ -7119,29 +7075,6 @@ p {
   }
   section.sobre_nosotros p {
     font-size: small;
-  }
-  .anim__imagengaleria {
-    padding: 1rem;
-  }
-  .anim__imagengaleria img {
-    height: 200px;
-  }
-  .anim__textgaleria:hover h3, .anim__textgaleria:hover .h3 {
-    transform: scale(1.09);
-  }
-  .anim__textgaleria:hover p {
-    transform: scale(1.07);
-  }
-  .anim__textgaleria h3, .anim__textgaleria .h3,
-  .anim__textgaleria p {
-    width: 100%;
-    transition: all 0.5s;
-  }
-  .anim__textgaleria h3, .anim__textgaleria .h3 {
-    padding-bottom: 0.5rem;
-  }
-  .anim__textgaleria p {
-    padding-bottom: 0.5rem;
   }
 }
 /* vista mobile */
@@ -7170,16 +7103,6 @@ p {
     flex-direction: row;
     justify-content: start;
   }
-  /* html galeria */
-  .titulos__tragos {
-    text-align: center;
-  }
-  .titulos__descripcion h3, .titulos__descripcion .h3 {
-    font-size: small;
-  }
-  .descripcion__tragos p {
-    font-size: x-small;
-  }
   /* html nosotros */
   section.sobre_nosotros h2, section.sobre_nosotros .h2 {
     font-size: x-large;
@@ -7189,27 +7112,6 @@ p {
   }
   section.sobre_nosotros p {
     font-size: small;
-  }
-  /* Animaciones en fotos y texto de galeria*/
-  .anim__imagengaleria {
-    padding: 1rem;
-  }
-  .anim__imagengaleria img {
-    height: 200px;
-  }
-  .anim__textgaleria:hover h3, .anim__textgaleria:hover .h3 {
-    transform: scale(1.09);
-  }
-  .anim__textgaleria:hover p {
-    transform: scale(1.07);
-  }
-  .anim__textgaleria h3, .anim__textgaleria .h3,
-  .anim__textgaleria p {
-    width: 100%;
-    transition: all 0.5s;
-  }
-  .anim__textgaleria h3, .anim__textgaleria .h3 {
-    padding-bottom: 0.5rem;
   }
 }
 /* vista desktop */
