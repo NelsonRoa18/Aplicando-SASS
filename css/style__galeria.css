@@ -177,6 +177,7 @@
 
 /* Mixin de display:flex, flex direction:row y justify-content:flex-end */
 /* Mixin de display:flex, flex direction:row y justify-content: start*/
+/* Mixin para links sin decoracion y color beige*/
 /* Variable del color de fondo del header, nav y footter*/
 /* Color del header de las cards*/
 /* Width de la imagen del logo*/
@@ -344,4 +345,4 @@
   }
 }
 
-/*# sourceMappingURL=galeria.css.map */
+/*# sourceMappingURL=style__galeria.css.map */
