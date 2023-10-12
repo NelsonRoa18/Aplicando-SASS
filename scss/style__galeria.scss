@@ -272,3 +272,9 @@
 	}
 
 }
+
+@include media-breakpoint-only (xxl) {
+	.navbar__mobile {
+		display: none;
+	}
+}
