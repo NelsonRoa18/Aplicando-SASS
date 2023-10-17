@@ -7040,6 +7040,11 @@ p {
   margin: 0;
 }
 
+.card-body img {
+  width: 569.5px;
+  height: 380px;
+}
+
 /* vista mobile */
 @media (max-width: 575.98px) {
   .img__logo__header {
@@ -7127,6 +7132,11 @@ p {
   }
 }
 @media (min-width: 1200px) and (max-width: 1399.98px) {
+  .navbar__mobile {
+    display: none;
+  }
+}
+@media (min-width: 1400px) {
   .navbar__mobile {
     display: none;
   }
